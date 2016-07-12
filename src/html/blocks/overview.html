@@ -1,0 +1,41 @@
+<section class="overview">
+    <header class="overview__header">
+        <h2 class="overview__title">{{overview.title}}</h2>
+    </header>
+    <div class="overview__gallery">
+        <button class="overview__btn overview__btn_left">
+            <i class="arrow-left"></i>
+        </button>
+        <div class="overview__gallery-holder">
+            <ul class="media-list">
+                {% for item in overview_list %}
+                <li class="media-list__item">
+                    <a href="#">
+                        {% if item.title %}
+                        <h3 class="media-list__title">
+                            {{ item.title }}
+                        </h3>
+                        {% endif %}
+
+                        {% if item.src %}
+                        <figure class="media-list__img">
+                            <img src="{{ item.src }}" alt="{{ item.title }}">
+                        </figure>
+                        {% endif %}
+
+                        {% if item.text %}
+                        <p class="media-list__text">
+                            {{ item.text }}
+                        </p>
+                        {% endif %}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <button class="overview__btn overview__btn_right">
+            <i class="arrow-right"></i>
+        </button>
+    </div>
+
+</section>

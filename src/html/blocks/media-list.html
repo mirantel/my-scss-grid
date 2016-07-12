@@ -1,0 +1,29 @@
+<li class="media-list__item {% if item.important %}media-list__item_important{% endif %}">
+    {% if item.src %}
+    <figure class="media-list__img">
+        {% if item.link %}<a href="{{ item.link }}" class="media-list__img-link">{% endif %}
+            <img src="{{ item.src }}" alt="{{ item.title }}">
+            {% if (item.src_photo or item.src_video) %}
+              <div class="icon-list">
+                {% if item.src_photo %}<i class="icon-list__item icon-photo"></i>{% endif %}
+                {% if item.src_video %}<i class="icon-list__item icon-video"></i>{% endif %}
+              </div>
+            {% endif %}
+        {% if item.link %}</a>{% endif %}
+    </figure>
+    {% endif %}
+
+    {% if item.title %}
+    <h3 class="media-list__title">
+      {% if item.link %}<a href="{{ item.link }}" class="media-list__title-link">{% endif %}
+        {{ item.title }}
+      {% if item.link %}</a>{% endif %}
+      {% if (item.photo_ico or item.video_ico) %}
+        <div class="icon-list">
+          {% if item.photo_ico %}<i class="icon-list__item icon-photo"></i>{% endif %}
+          {% if item.video_ico %}<i class="icon-list__item icon-video"></i>{% endif %}
+        </div>
+      {% endif %}
+    </h3>
+    {% endif %}
+</li>

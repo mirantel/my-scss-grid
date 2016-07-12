@@ -1,0 +1,28 @@
+{% from 'macros/helpers.html' import sprite %}
+<!doctype html>
+<!--[if lt IE 10]><html class="lt-ie10"><![endif]-->
+<!--[if gt IE 10]><!--> <html> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include "shared/app-icons.html" %}
+    {% block head %}{% endblock %}
+    <!--[if lt IE 9]>
+      <script>
+      document.createElement('header');
+      document.createElement('section');
+      document.createElement('aside');
+      document.createElement('footer');
+      document.createElement('figure');
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+    {% block javascript %}
+      <script src="javascripts/app.js"></script>
+    {% endblock %}
+  </body>
+</html>

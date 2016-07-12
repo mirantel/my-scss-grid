@@ -1,0 +1,216 @@
+{
+  "hot_themes": {
+    "title": "Hot themes"
+  },
+  "hot_themes_list": [{
+    "title": "EURO-2016 Playoffs",
+    "link": "#"
+  }, {
+    "title": "El’ Classico",
+    "link": "#"
+  }],
+
+  "intro_list": [{
+    "src": "http://placekitten.com/g/570/375",
+    "title": "Jurgen Klopp makes a sexy Liverpool",
+    "text":"Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp",
+    "link": "#"
+  }],
+
+  "main_news": {
+    "title": "Main News"
+  },
+  "main_news_list": [{
+    "src": "http://placekitten.com/g/280/180",
+    "title": "The FIFA Ballon d'Or is an annual association football award given by FIFA",
+    "link": "#"
+  }, {
+    "src": "http://placekitten.com/g/280/180",
+    "title": "Messi got some balloons",
+    "link": "#"
+  }, {
+    "src": "http://placekitten.com/g/280/180",
+    "title": "CR7 also, but not so much",
+    "link": "#"
+  }, {
+    "src": "http://placekitten.com/g/280/180",
+    "title": "Ribery got vase!",
+    "link": "#",
+    "photo_ico": true
+  }],
+
+  "last_news": {
+    "title": "Last News"
+  },
+  "last_news_list": [{
+    "title": "Real Madrid players to gaffer: up and at 'em!",
+    "link": "#"
+  }, {
+    "title": "Swedes indebted to talismanic Ibrahimovic",
+    "link": "#",
+    "small_link": "marca.com"
+  }, {
+    "title": "2016 European Championship to go ahead in France",
+    "link": "#"
+  }, {
+    "title": "Ancelotti: \"Premier League return is my no. 1 choice\"",
+    "link": "#"
+  }, {
+    "title": "Walters double secures Euro 2016 spot for Ireland",
+    "link": "#"
+  }, {
+    "title": "\"They intended to set off an explosive inside the stadium\" - eyewitness",
+    "link": "#"
+  }, {
+    "title": "Raúl bids goodbye in style",
+    "link": "#",
+    "photo_ico": true,
+    "video_ico": true
+  }, {
+    "title": "Five reasons Belgium vs. Spain was called off",
+    "link": "#"
+  }, {
+    "title": "Niggles won't keep Benzema out of 'Clásico'",
+    "link": "#"
+  }, {
+    "title": "Abdeslam suspected to have been near King Baudouin Stadium",
+    "link": "#"
+  }],
+
+  "newsfeed": {
+    "title": "Newsfeed"
+  },
+  "newsfeed_list": [{
+    "src": "http://placekitten.com/g/100/55",
+    "title": "Zlatan Ibrahimovic on target as Sweden qualify with draw in Denmark",
+    "link": "#",
+    "important": true,
+    "photo_ico": true
+  }, {
+    "title": "Alvaro Morata insists Juventus are “still hungry” and targets victory over Milan on Saturday.",
+    "link": "#"
+  }, {
+    "title": "Ecuador stay perfect as Argentina, Brazil win",
+    "link": "#"
+  }, {
+    "title": "Sweden, Ukraine complete Euro line-up",
+    "link": "#",
+    "small_link": "fifa.com"
+  }, {
+    "title": "Aubameyang penalty gives Gabon World Cup joy",
+    "link": "#"
+  }],
+
+  "big_photo_list": [{
+    "src": "http://placekitten.com/g/550/350",
+    "src_photo": true,
+    "title": "Here is how Leage Champions trophy looks like",
+    "link": "#"
+  }, {
+    "src": "http://placekitten.com/g/550/350",
+    "src_photo": true,
+    "title": "Casillas got some piece of paper",
+    "link": "#"
+  }, {
+    "src": "http://placekitten.com/g/550/350",
+    "src_photo": true,
+    "title": "Bayern Munich vs Barcelona. Fangirls :)",
+    "link": "#"
+  }],
+
+  "video": {
+    "title": "Видео",
+    "link_more": "#",
+    "link_more_text": "Больше видео → "
+  },
+  "video_list": [{
+    "src": "http://placekitten.com/g/280/176",
+    "src_video": true,
+    "title": "Фильм дня: Гитлер Капут!",
+    "link": "#"
+  }, {
+    "src": "http://placekitten.com/g/280/176",
+    "src_video": true,
+    "title": "Ксения Собчак беременна",
+    "link": "#"
+  }, {
+    "src": "http://placekitten.com/g/280/176",
+    "src_video": true,
+    "title": "Группа парней избила влюбленную пару бейсбольной битой",
+    "link": "#"
+  }, {
+    "src": "http://placekitten.com/g/280/176",
+    "src_video": true,
+    "title": "Небесные ласточки: двухсерийная музыкальная комедия",
+    "link": "#"
+  }, {
+    "src": "http://placekitten.com/g/280/176",
+    "src_video": true,
+    "title": "На дополнительном кастинге \"Хочу в ВИА Гру\" девушек просили",
+    "link": "#"
+  }],
+
+  "interest_articles": {
+    "title": "Интересные статьи"
+  },
+  "interest_articles_list": [{
+    "src": "http://placekitten.com/g/200/128",
+    "title": "Испанский политик полностью оделась для глянца",
+    "link": "#"
+  }, {
+    "src": "http://placekitten.com/g/200/128",
+    "title": "Анджелина Джоли сильно похудела",
+    "link": "#",
+    "photo_ico": true
+  }, {
+    "src": "http://placekitten.com/g/200/128",
+    "title": "Исполнить мечту и умереть: История 14-летней девочки...",
+    "link": "#",
+    "photo_ico": true
+  }, {
+    "src": "http://placekitten.com/g/200/128",
+    "title": "Ирина Билык сказала, что думает о повзрослевшей Алине...",
+    "link": "#"
+  }, {
+    "src": "http://placekitten.com/g/200/128",
+    "title": " 7 \"смертных грехов\": чего нельзя делать в отношениях",
+    "link": "#"
+  }],
+
+  "overview": {
+    "title": "Обзор"
+  },
+  "overview_list": [{
+    "src": "http://placekitten.com/g/140/92",
+    "title": "Знакомства",
+    "text": "Отношения актеров в кино и в реальной жизни"
+  }, {
+    "src": "http://placekitten.com/g/140/92",
+    "title": "Знакомства",
+    "text": "Отношения актеров в кино и в реальной жизни"
+  }, {
+    "src": "http://placekitten.com/g/140/92",
+    "title": "Знакомства",
+    "text": "Отношения актеров в кино и в реальной жизни"
+  }, {
+    "src": "http://placekitten.com/g/140/92",
+    "title": "Знакомства",
+    "text": "Отношения актеров в кино и в реальной жизни"
+  }, {
+    "src": "http://placekitten.com/g/140/92",
+    "title": "Знакомства",
+    "text": "Отношения актеров в кино и в реальной жизни"
+  }, {
+    "src": "http://placekitten.com/g/140/92",
+    "title": "Знакомства",
+    "text": "Отношения актеров в кино и в реальной жизни"
+  },{
+    "src": "http://placekitten.com/g/140/92",
+    "title": "Знакомства",
+    "text": "Отношения актеров в кино и в реальной жизни"
+  }, {
+    "src": "http://placekitten.com/g/140/92",
+    "title": "Знакомства",
+    "text": "Отношения актеров в кино и в реальной жизни"
+  }]
+}

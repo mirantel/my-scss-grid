@@ -1,0 +1,105 @@
+.overview {
+    margin: 0 $grid-gutter / 2 0;
+    padding: 7px 0 16px;
+    border-bottom: 2px solid $color-gray;
+
+    &__header {
+        position: relative;
+        margin: 0 0 10px;
+
+
+        &:after {
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            content: '';
+            border-bottom: 2px solid $color-gray;
+        }
+    }
+
+    &__title {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        margin: 0;
+        padding-right: 5px;
+        background: #fff;
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 1;
+    }
+
+    &__gallery {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__gallery-holder {
+        width: 100000px;
+        margin-left: $grid-column + $grid-gutter;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: $grid-column;
+        cursor: pointer;
+        border: 0;
+        background: #fff;
+        background: rgba(255,255,255,0.75);
+        outline: none;
+
+        &_right {
+            right: 0;
+        }
+
+        &_left {
+            left: 0;
+        }
+    }
+
+    .media-list {
+        @include row;
+
+        margin: 0 (-$grid-gutter/2);
+
+        a {
+            text-decoration: none;
+        }
+
+
+        &__item {
+            @include column(2, 12, true, false);
+        }
+
+        &__title {
+            margin-bottom: 5px;
+            color: $color-red;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        &__text {
+            margin: 5px 0 0;
+            color: $color-blue;
+            font-size: 14px;
+            line-height: 1.25;
+        }
+    }
+}
+.arrow-right,
+.arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 40px;
+    margin: -32px 0 0 -15px;
+    background: url('../images/arrows.png');
+}
+
+.arrow-right {
+    background-position: right top;
+}

@@ -1,0 +1,39 @@
+@mixin hide-text {
+    color: transparent;
+    box-shadow: none;
+    font: 0/0 a;
+}
+
+@mixin clearfix {
+    &:after {
+        display: block;
+        clear: both;
+        content: '';
+    }
+}
+
+@mixin ellipsis() {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin respond-to($media) {
+    @if $media == mobile {
+        @media only screen and (max-width: $break-mobile) {
+            @content;
+        }
+    }
+
+    @else if $media == tablet {
+        @media only screen and (max-width: $break-tablet) {
+            @content;
+        }
+    }
+
+    @else if $media == tablet_only {
+        @media only screen and (min-width: $break-mobile + 1) and (max-width: $break-tablet) {
+            @content;
+        }
+    }
+}

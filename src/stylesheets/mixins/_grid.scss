@@ -1,0 +1,67 @@
+@function col-width($columns) {
+    @return $columns * ($grid-column + $grid-gutter);
+}
+
+@function flex-col-width($columns, $parent-columns: $grid-columns-num) {
+    @return percentage(col-width($columns) / col-width($parent-columns));
+}
+
+/// Grid mixins
+@mixin column($column-num, $parent-column-num: $grid-columns-num, $gutter: true, $percentage: true) {
+    flex: 0 0 auto;
+
+    @if ($percentage == true) {
+        max-width: flex-col-width($column-num, $parent-column-num);
+        flex-basis: flex-col-width($column-num, $parent-column-num);
+    }
+
+    @else {
+        max-width: col-width($column-num);
+        flex-basis: col-width($column-num);
+    }
+
+    @if ($gutter == true) {
+        padding: 0 $grid-gutter/2;
+    }
+
+    .lt-ie10 & {
+        float: left;
+
+        @if ($percentage == true) {
+            width: flex-col-width($column-num, $parent-column-num);
+        }
+
+        @else {
+            width: col-width($column-num);
+        }
+    }
+}
+
+@mixin column-width-break($column-num, $parent-column-num: $grid-columns-num, $gutter: true, $percentage: true) {
+    @if ($percentage == true) {
+        max-width: flex-col-width($column-num, $parent-column-num);
+        flex-basis: flex-col-width($column-num, $parent-column-num);
+    }
+
+    @else {
+        max-width: col-width($column-num);
+        flex-basis: col-width($column-num);
+    }
+}
+
+@mixin row () {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+
+    .row {
+        margin: 0 (-$grid-gutter/2);
+    }
+
+    .lt-ie10 & {
+        @include clearfix();
+
+        display: block;
+    }
+}

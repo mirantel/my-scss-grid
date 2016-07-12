@@ -1,0 +1,78 @@
+.video {
+    margin-bottom: 45px;
+    border-bottom: 5px solid $color-gray;
+
+    &__header {
+        position: relative;
+        margin: 5px 0 10px;
+        text-align: center;
+
+        &:after {
+            position: absolute;
+            bottom: 9px;
+            left: 0;
+            width: 100%;
+            content: '';
+            border-bottom: 2px solid $color-gray;
+        }
+    }
+
+    &__title {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        margin: 0;
+        padding: 0 5px;
+        text-transform: uppercase;
+        color: $color-purple;
+        background: #fff;
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    &__link-more {
+        @include respond-to(tablet_only) {
+            margin: 0;
+        }
+
+        display: inline-block;
+        margin: 11px 0 3px;
+        color: $color-blue;
+        font-size: 18px;
+    }
+
+    .media-list {
+        line-height: 1.428;
+
+        &__item {
+            @include row();
+            @include respond-to(tablet_only) {
+                flex-direction: column;
+                margin-bottom: $grid-gutter;
+            }
+
+            margin-bottom: $grid-gutter /2 ;
+        }
+
+        &__img {
+            @include column(2, 4, false);
+            @include respond-to(tablet_only) {
+                @include column-width-break(4, 4);
+
+                padding: 0 0 $grid-gutter / 2;
+            }
+
+            padding-right: $grid-gutter / 2;
+        }
+
+        &__title {
+            @include column(2, 4, false);
+            @include respond-to(tablet_only) {
+                @include column-width-break(4, 4);
+            }
+
+            margin-top: -0.2em;
+            font-size: 14px;
+        }
+    }
+}

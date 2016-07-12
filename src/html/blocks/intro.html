@@ -1,0 +1,42 @@
+<section class="intro">
+    <ul class="media-list">
+        {% for item in intro_list %}
+        <li class="media-list__item is-visible">
+            {% if item.src %}
+            <figure class="media-list__img">
+                {% if item.link %}<a href="{{ item.link }}" class="media-list__img-link">{% endif %}
+                    <img src="{{ item.src }}" alt="{{ item.title }}">
+                    {% if (item.src_photo or item.src_video) %}
+                      <div class="icon-list">
+                        {% if item.src_photo %}<i class="icon-list__item icon-photo"></i>{% endif %}
+                        {% if item.src_video %}<i class="icon-list__item icon-video"></i>{% endif %}
+                      </div>
+                    {% endif %}
+                {% if item.link %}</a>{% endif %}
+            </figure>
+            {% endif %}
+
+            <div class="media-list__content">
+                {% if item.title %}
+                <h3 class="media-list__title">
+                  {% if item.link %}<a href="{{ item.link }}" class="media-list__title-link">{% endif %}
+                    {{ item.title }}
+                  {% if item.link %}</a>{% endif %}
+                </h3>
+                {% endif %}
+
+                {% if item.text %}
+                <p class="media-list__text">
+                    {{ item.text }}
+                </p>
+                {% endif %}
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    <div class="slider-counter">
+        <button type="button" name="button" class="slider-counter__btn slider-counter__btn_left"></button>
+        <span class="slider-counter__num">7/20</span><span class="slider-counter__timer slider-counter__timer_1"></span>
+        <button type="button" name="button" class="slider-counter__btn slider-counter__btn_right"></button>
+    </div>
+</section>

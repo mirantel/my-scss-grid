@@ -1,0 +1,79 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+  <div class="container">
+      <div class="row">
+          <div class="main">
+              <div class="hot-themes">
+                  <h2 class="hot-themes__title">{{ hot_themes.title }}</h2>
+                  <ul class="hot-themes__list">
+                  {% for item in hot_themes_list %}
+                      <li class="hot-themes__item"><a href="{{ item.link }}">{{ item.title }}</a></li>
+                  {% endfor %}
+                  </ul>
+              </div>
+              {% include "blocks/intro.html" %}
+              <section class="main-news">
+                  <header class="main-news__header">
+                      <h2 class="main-news__title">{{main_news.title}}</h2>
+                  </header>
+                  <ul class="media-list">
+                      {% for item in main_news_list %}{% include "blocks/media-list.html" %}{% endfor %}
+                  </ul>
+              </section>
+              <div class="row">
+                  <div class="news-col">
+                      <section class="news">
+                          <header class="news__header">
+                              <h2 class="news__title">{{last_news.title}}</h2>
+                          </header>
+                          <ul class="media-list">
+                              {% for item in last_news_list %}{% include "blocks/media-list.html" %}{% endfor %}
+                          </ul>
+                      </section>
+
+                      <section class="news newsfeed">
+                          <header class="news__header">
+                              <h2 class="news__title">{{newsfeed.title}}</h2>
+                          </header>
+                          <ul class="media-list">
+                              {% for item in newsfeed_list %}{% include "blocks/media-list.html" %}{% endfor %}
+                          </ul>
+                      </section>
+                  </div>
+                  <section class="big-photo">
+                      <ul class="media-list">
+                          {% for item in big_photo_list %}{% include "blocks/media-list.html" %}{% endfor %}
+                      </ul>
+                  </section>
+              </div>
+          </div>
+          <section class="sidebar">
+              <section class="video">
+                  <header class="video__header">
+                      <h2 class="video__title">{{ video.title }}</h2>
+                  </header>
+                  <ul class="media-list">
+                      {% for item in video_list %}{% include "blocks/media-list.html" %}{% endfor %}
+                  </ul>
+                  <a href="{{ video.link_more }}" class="video__link-more">{{video.link_more_text}}</a>
+              </section>
+              <section class="interest-articles">
+                  <header class="interest-articles__header">
+                      <h2 class="interest-articles__title">{{interest_articles.title}}</h2>
+                  </header>
+                  <ul class="media-list">
+                      {% for item in interest_articles_list %}{% include "blocks/media-list.html" %}{% endfor %}
+                  </ul>
+              </section>
+          </section>
+      </div>
+      {% include "blocks/overview.html" %}
+  </div>
+{% endblock %}
